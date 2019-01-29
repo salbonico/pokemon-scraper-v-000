@@ -6,7 +6,7 @@ def initialize(id:,name:,type:,db:)
 @id = id
 @name = name
 @type = type
-@hp = hp
+@hp = 60
 @db = db
 end
 
