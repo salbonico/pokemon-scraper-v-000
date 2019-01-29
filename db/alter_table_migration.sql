@@ -1,2 +1,2 @@
 ALTER TABLE pokemon ADD COLUMN (hp, INTEGER);
-INSERT INTO pokemon (hp) VALUES (60)
+INSERT INTO pokemon (hp) VALUES (60);
