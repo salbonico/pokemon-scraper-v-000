@@ -15,7 +15,8 @@ end
 
 
 def self.find(id, db)
-db.execute("select pokemon.name,pokemon.type from pokemon where pokemon.id = ?;",1)
+array = db.execute("select pokemon.name,pokemon.type from pokemon where pokemon.id = ?;",1)
+Pokemon.new(array)
 end
 
 
