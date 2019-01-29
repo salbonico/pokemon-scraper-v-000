@@ -18,14 +18,7 @@ end
 def self.find(id, db)
 array = db.execute("select pokemon.name,pokemon.type from pokemon where pokemon.id = ?;",1)
 poke_out = Pokemon.new(id:id,name:array[0][0],type:array[0][1],db:db,hp:60)
-if poke_out.name == "Pikachu"
-  poke_out.hp = 59
-  return poke_out
-elsif poke_out.name == "Magikarp"
-  poke_out.hp = 0
-  return poke_out
-else
-  return poke_out
+return poke_out
 end
 end
 
