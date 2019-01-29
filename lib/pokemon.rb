@@ -23,6 +23,9 @@ if poke_out.name == "Pikachu"
   return poke_out
 elsif poke_out.name == "Magikarp"
   poke_out.hp = 0
+  return poke_out
+else
+  return poke_out
 end
 
 
