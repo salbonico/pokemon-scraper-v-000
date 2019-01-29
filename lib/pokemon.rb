@@ -20,7 +20,6 @@ array = db.execute("select pokemon.name,pokemon.type from pokemon where pokemon.
 poke_out = Pokemon.new(id:id,name:array[0][0],type:array[0][1],db:db,hp:60)
 return poke_out
 end
-end
 
 
 
