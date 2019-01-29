@@ -19,7 +19,7 @@ array = db.execute("select pokemon.name,pokemon.type from pokemon where pokemon.
 name = array[0]
 type = array[1]
 binding.pry
-Pokemon.new(id:id,name:name,type:type,db:db)
+Pokemon.new(id:id,name:array[0][0],type:array[0][1],db:db)
 end
 
 
