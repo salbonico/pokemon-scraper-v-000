@@ -22,8 +22,8 @@ return poke_out
 end
 
 def alter_hp(hp,db)
-return self.name
-db.execute("UPDATE pokemon SET hp = ? WHERE name = ?;",hp,self.name)
+
+db.execute("UPDATE pokemon SET hp = ? WHERE name = ?;",hp,@name)
 end
 
 
