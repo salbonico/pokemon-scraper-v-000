@@ -22,7 +22,7 @@ return poke_out
 end
 
 def alter_hp(hp,db)
-db.execute("INSERT INTO pokemon (hp) VALUES (?) where pokemon.name = ?;",hp,self)
+db.execute("INSERT INTO pokemon (hp) VALUES (?) where pokemon.name = ?;",hp,self.name)
 end
 
 
