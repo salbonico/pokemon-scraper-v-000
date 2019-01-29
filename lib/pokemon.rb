@@ -27,6 +27,7 @@ elsif poke_out.name == "Magikarp"
 else
   return poke_out
 end
+end
 
 
 
