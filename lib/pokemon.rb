@@ -23,7 +23,6 @@ end
 
 def alter_hp(hp,db)
 db.execute("UPDATE pokemon SET hp=? WHERE id=?;",hp,self.id)
-#db.execute("INSERT INTO pokemon (hp) VALUES (59);")
 end
 
 
