@@ -11,7 +11,6 @@ end
 
 def save
 @db.execute("insert into pokemon (name,type) values (?,?)",@name,@type)
-
 end
 
 
